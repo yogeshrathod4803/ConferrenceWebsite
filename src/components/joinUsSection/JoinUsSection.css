@@ -1,0 +1,104 @@
+/* JoinUsSection.css */
+
+/* Desktop view styles */
+
+.Grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 140px;
+}
+
+.item1,
+.item2,
+.item3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: -40px 118px 118px; /* Adjust the top margin */
+}
+
+.item-content,
+.item-content2,
+.item-content3 {
+  flex: 1;
+  padding: 20px;
+  color: #333;
+}
+
+.item-content h1,
+.item-content2 h1,
+.item-content3 h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.item-content p,
+.item-content2 p,
+.item-content3 p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.btn,
+.btn2,
+.btn3 {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #333;
+  border-radius: 4px;
+  color: #333;
+  background-color: transparent;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover,
+.btn2:hover,
+.btn3:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.item-img img,
+.item-img3 img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.item2 .item-img img {
+  width: 1649px; /* Set the width for the specific item */
+}
+
+/* Mobile view styles */
+
+@media (max-width: 767px) {
+  .Grid-container {
+    margin-top: 80px; /* Adjust the top margin for mobile view */
+  }
+
+  .item1,
+  .item2,
+  .item3 {
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0; /* Remove the top margin for mobile view */
+  }
+
+  .item-content,
+  .item-content2,
+  .item-content3 {
+    padding: 10px; /* Adjust padding for mobile view */
+  }
+
+  .item2 .item-img img {
+    width: 100%; /* Make the image responsive in mobile view */
+  }
+}

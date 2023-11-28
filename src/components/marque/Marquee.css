@@ -1,0 +1,72 @@
+/* Marquee.css */
+
+/* Marquee Container */
+.section--marquee {
+  overflow: hidden;
+  background-color: #ee6a2d;
+  padding: 12px;
+  border: 4px solid #000;
+}
+
+/* Marquee Wrapper */
+.marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Outside Container */
+.outside-container {
+  display: flex;
+  position: relative;
+}
+
+/* Black Line Separator */
+.black-line {
+  background-color: #000;
+  height: 2px;
+  width: 100%;
+  margin: 10px 0;
+  display: block;
+}
+
+/* Additional Black Lines */
+.black-line-top,
+.black-line-bottom {
+  background-color: #000;
+  height: 2px;
+  width: 100%;
+}
+
+/* Inside Container (for animation) */
+.inside-container {
+  display: flex;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+/* Marquee Text */
+.marquee-text {
+  white-space: nowrap;
+  padding: 10px;
+  font-size: 18px;
+  color: #333;
+  position: relative;
+}
+
+/* Line Positions */
+.black-line-top {
+  position: absolute;
+  top: 0;
+}
+
+.black-line-bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+/* Adjustments for mobile responsiveness */
+@media screen and (max-width: 600px) {
+  .marquee-text {
+    font-size: 14px;
+  }
+}

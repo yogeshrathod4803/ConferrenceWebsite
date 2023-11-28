@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import HeroSection from "./components/herosection/HeroSection.js";
+import NavBar from "./components/navbar/NavBar";
+import KeySpeakerSection from "./components/key-speaker-section/KeySpeakerSection.js";
+import Testimonials from "./components/testimonials/Testimonials.js";
+import Marquee from "./components/marque/Marquee.js";
+import TicketList from "./components/tickets/TicketList.js";
+import JoinUsSection from "./components/joinUsSection/JoinUsSection.js";
+import Footer from "./components/footer/Footer.js";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavBar />
+      <HeroSection />
+      <KeySpeakerSection />
+      <Testimonials />
+      <Marquee />
+      <TicketList />
+      <JoinUsSection />
+      <Footer />
+    </>
   );
 }
 
